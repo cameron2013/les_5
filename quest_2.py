@@ -4,14 +4,10 @@ with open("my_read.txt", 'r', encoding="utf-8") as f:
     i = 1
     for el in date:
         el = el.split()
-        if i == 2:
-            if len(el) < 5:
-                print(f"Во {i}-ой строке {len(el)} слова")
-            else:
-                print(f"Во {i}-ой строке {len(el)} слов")
+        if len(el)>5:
+            print(f"{len(el)} слов")
+        elif len(el) == 1:
+            print(f"{len(el)} слово")
         else:
-            if len(el) < 5:
-                print(f"Во {i}-ой строке {len(el)} слова")
-            else:
-                print(f"Во {i}-ой строке {len(el)} слов")
+            print(f"{len(el)} слова")
         i += 1
