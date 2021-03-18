@@ -8,5 +8,3 @@ while True:
     else:
         f.write(date + '\n')
 f.close()
-
-
